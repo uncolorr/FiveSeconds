@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="0dp">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#87CEFA">
+
+        <ImageView
+            android:id="@+id/imageViewRoundBackground"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="0dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <ImageView
+            android:id="@+id/imageViewColor"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="0dp"
+
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewRoundBackground"
+            app:layout_constraintLeft_toLeftOf="@+id/imageViewRoundBackground"
+            app:layout_constraintRight_toRightOf="@+id/imageViewRoundBackground"
+            app:layout_constraintTop_toTopOf="@+id/imageViewRoundBackground" />
+
+        <TextView
+            android:id="@+id/textViewPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="7"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewColor"
+            app:layout_constraintLeft_toLeftOf="@+id/imageViewColor"
+            app:layout_constraintRight_toRightOf="@+id/imageViewColor"
+            app:layout_constraintTop_toTopOf="@+id/imageViewColor" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
